@@ -1,0 +1,9 @@
+*
+!pyproject.toml
+!uv.lock
+!app.py
+!fakenews/
+!data/examples.json
+!.streamlit/
+!models/models.yaml
+**/__pycache__
