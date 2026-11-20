@@ -1,0 +1,16 @@
+services:
+  fake-news:
+    build: .
+    container_name: fake-news-classifier
+    ports:
+      # http://localhost:8503 (8501 and 8502 are left free for other Streamlit apps)
+      - "8503:8501"
+    volumes:
+      # Models you train yourself with training/ are picked up from here first
+      - ./models:/app/models:ro
+      # Models downloaded from Hugging Face survive re-creation
+      - hf-cache:/app/.cache
+    restart: unless-stopped
+
+volumes:
+  hf-cache:

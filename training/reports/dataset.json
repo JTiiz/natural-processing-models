@@ -1,0 +1,27 @@
+{
+  "source": "https://huggingface.co/datasets/haoxianc/gilchr_fake-and-real-news-dataset",
+  "revision": "a067c985b7ddab9b2f8c16c83e9763b67d20b3cf",
+  "articles_total": 43059,
+  "original": {
+    "train": 30482,
+    "test": 7621,
+    "validation": 4141,
+    "validation_subjects": {
+      "left-news": 1974,
+      "worldnews": 1384,
+      "US_News": 783
+    }
+  },
+  "clean": {
+    "train": 27748,
+    "test": 6937,
+    "validation": 4141,
+    "train_dropped": 3418,
+    "validation_dropped": 815,
+    "validation_subjects": {
+      "left-news": 1974,
+      "worldnews": 1384,
+      "US_News": 783
+    }
+  }
+}

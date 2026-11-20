@@ -1,0 +1,15 @@
+# The three text classifiers. Each is loaded from models/<folder>/ when that folder
+# exists, otherwise downloaded from the Hugging Face Hub on first use.
+models:
+  - key: tfidf-logreg
+    name: TF-IDF + Logistic regression
+    folder: fake-news-tfidf-logreg
+    hub_id: jramduran/fake-news-tfidf-logreg
+  - key: bow-naive-bayes
+    name: Bag of words + Naive Bayes
+    folder: fake-news-bow-naive-bayes
+    hub_id: jramduran/fake-news-bow-naive-bayes
+  - key: tfidf-random-forest
+    name: TF-IDF + Random forest
+    folder: fake-news-tfidf-random-forest
+    hub_id: jramduran/fake-news-tfidf-random-forest

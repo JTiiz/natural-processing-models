@@ -1,0 +1,45 @@
+{
+  "test": {
+    "accuracy": 0.974052183941185,
+    "f1_fake": 0.9699799866577719,
+    "f1_real": 0.9771515613099772,
+    "roc_auc": 0.9965524325920738,
+    "confusion": {
+      "fake_as_fake": 2908,
+      "fake_as_real": 121,
+      "real_as_fake": 59,
+      "real_as_real": 3849
+    },
+    "n": 6937
+  },
+  "validation": {
+    "accuracy": 0.9029219995170249,
+    "f1_fake": 0.921850699844479,
+    "f1_real": 0.8718929254302104,
+    "roc_auc": 0.9926542736198557,
+    "confusion": {
+      "fake_as_fake": 2371,
+      "fake_as_real": 386,
+      "real_as_fake": 16,
+      "real_as_real": 1368
+    },
+    "n": 4141
+  },
+  "validation_by_subject": {
+    "US_News": 0.8071519795657727,
+    "left-news": 0.8809523809523809,
+    "worldnews": 0.9884393063583815
+  },
+  "data": {
+    "train": 27748,
+    "test": 6937,
+    "validation": 4141,
+    "train_dropped": 3418,
+    "validation_dropped": 815,
+    "validation_subjects": {
+      "left-news": 1974,
+      "worldnews": 1384,
+      "US_News": 783
+    }
+  }
+}
